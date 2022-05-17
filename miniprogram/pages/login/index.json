@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "用户登录",
+  "navigationBarBackgroundColor": "#1989fa",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-button": "@vant/weapp/button/index"
+  }
+}

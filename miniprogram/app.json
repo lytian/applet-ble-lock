@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/index/index",
+    "pages/around/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "锁具调试",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f7f8fa"
+  },
+  "sitemapLocation": "sitemap.json"
+}

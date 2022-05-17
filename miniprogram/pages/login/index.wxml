@@ -1,0 +1,15 @@
+<!--pages/login/index.wxml-->
+<view class="container">
+  <image class="avatar" src="/images/user.png" mode="scaleToFill" />
+
+  <view class="field-cell">
+    <van-icon name="phone-circle-o" custom-class="field-icon"/>
+    <input model:value="{{phone}}" placeholder="请输入手机号码" maxlength="11" confirm-type="next" confirm-hold data-index="1"></input>
+  </view>
+  <view class="field-cell">
+    <van-icon name="more-o" custom-class="field-icon"/>
+    <input model:value="{{password}}" placeholder="请输入登录密码" password="true" maxlength="16" confirm-type="done" confirm-hold bindconfirm="login" data-index="2"></input>
+  </view>
+
+  <van-button type="info" block round bind:click="login" loading="{{loginLoading}}" loading-text="正在绑定..." size="small" custom-class="login-btn">登录</van-button>
+</view>

@@ -1,0 +1,42 @@
+/* pages/login/index.wxss */
+.avatar {
+  display: block;
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0 auto 120rpx;
+}
+
+.field-cell {
+  border: 1rpx solid #999;
+  height: 90rpx;
+  border-radius: 10rpx;
+  padding: 0 24rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+
+  &:hover {
+    border-color: #1989fa;
+    .field-icon {
+      color: #1989fa;
+    }
+  }
+
+  .field-icon {
+    font-size: 50rpx;
+    margin-right: 24rpx;
+    flex-shrink: 0;
+  }
+
+  input {
+    width: 100%;
+    text-align: left;
+    font-size: 32rpx;
+    line-height: 90rpx;
+  }
+}
+
+.login-btn {
+  margin-top: 80rpx;
+  height: 90rpx !important;
+}

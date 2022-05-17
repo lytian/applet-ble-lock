@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="ble-status" wx:if="{{selectedDevice != null}}">
+    <text decode>已选择锁具：{{selectedDevice.name}} \n&emsp;&emsp;&nbsp;设备ID：{{selectedDevice.deviceId}}</text>
+    <view class="close-btn" bindtap="closeDevice">关闭</view>
+  </view>
+
+  <van-grid column-num="3" square clickable custom-class="menu-grids">
+    <van-grid-item
+      icon="/images/icon-round.png"
+      text="周围锁具"
+      url="/pages/around/index">
+    </van-grid-item> 
+    <van-grid-item
+      icon="/images/icon-lock.png"
+      text="调试开锁"
+      bind:click="debugUnlock">
+    </van-grid-item> 
+    <van-grid-item
+      icon="/images/icon-info.png"
+      text="软件版本"
+      bind:click="getVersion">
+    </van-grid-item> 
+    <van-grid-item
+      icon="/images/icon-upload.png"
+      text="锁具投运"
+      bind:click="lockUpload">
+    </van-grid-item> 
+    <van-grid-item
+      icon="/images/icon-lock2.png"
+      text="在线开锁"
+      bind:click="onlineUnlock">
+    </van-grid-item> 
+  </van-grid>
+</view>
